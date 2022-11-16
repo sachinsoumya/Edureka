@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        table ,th ,td {
+            border:1px solid black;
+            /* border-collapse: collapse;  */
+            border-radius: 10px;
+            /* border-style:dashed; */
+            border-color: red;
+            border-spacing: 18px;
+        }
+         th,td{ 
+            
+            background-color: aquamarine;
+            text-align: center;
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+            /* padding: 50px; */
+            padding: 10px 20px 30px 40px;
+        }
+    </style>
+</head>
+<br>
+    <table >
+        <tr>
+            <th style="width: 50%;" colspan="2">Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr style="height: 50px;">
+            <td>Sonu</td>
+            <td>sonu@gmail.com</td>
+            <td>1234</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>rahul@gmail.com</td>
+            <td>5698</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>prakash@gmail.com</td>
+            <td>3478</td>
+        </tr>
+    </table></br>
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <td>Goira</td>
+            <td>kopi</td>
+            <td>sam</td>
+        </tr>
+
+        <tr>
+            
+            <td>goira@gmail.com</td>
+            <td>koi@gmail.com</td>
+            <td>sam@gmail.com</td>
+
+
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>4567</td>
+            <td>4444</td>
+            <td>5678</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
