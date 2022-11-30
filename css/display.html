@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display property</title>
+    <style>
+      span {
+        display: block;
+      }
+      div {
+        display: inline;
+      }
+      p {
+        /* display:none; */
+        /* visibility: none; */
+        visibility: hidden;
+        color: red;
+      }
+      span.display1 {
+        width: 200px;
+        height: 150px;
+        background-color: bisque;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid green;
+        display: block;
+      }
+      span.display2 {
+        width: 900px;
+        height: 200px;
+        background-color: brown;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid blue;
+        display: inline;
+      }
+      span.display3 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid skyblue;
+        margin-top: 400px;
+        padding: 20px;
+
+        background-color: blueviolet;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <span>Display example</span>
+    <span>Display Example</span>
+    <div>This is a dev element</div>
+    <p>This is display none</p>
+    <div>This is div element</div>
+    <div>
+      Jammu and Kashmir is a region administered by India as a union territory
+      and consists of the southern portion of the larger Kashmir region, which
+      has been the subject of a dispute between India and Pakistan since 1947,
+      and between India and China since 1962.
+      <span class="display1">
+        Kashmir is the northernmost geographical region of the Indian
+        subcontinent. Until the mid-19th century
+      </span>
+    </div>
+    <div>
+      Jammu and Kashmir is a region administered by India as a union territory
+      and consists of the southern portion of the larger Kashmir region, which
+      has been the subject of a dispute between India and Pakistan since 1947,
+      and between India and China since 1962.
+      <span class="display2">
+        Kashmir is the northernmost geographical region of the Indian
+        subcontinent. Until the mid-19th century
+      </span>
+    </div>
+    <div>
+      Jammu and Kashmir is a region administered by India as a union territory
+      and consists of the southern portion of the larger Kashmir region, which
+      has been the subject of a dispute between India and Pakistan since 1947,
+      and between India and China since 1962.
+      <span class="display3">
+        Kashmir is the northernmost geographical region of the Indian
+        subcontinent. Until the mid-19th century
+      </span>
+    </div>
+  </body>
+</html>

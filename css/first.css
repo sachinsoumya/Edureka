@@ -1,0 +1,29 @@
+body{
+    background-color: aliceblue;
+
+}
+h1{
+    text-align: center;
+}
+.card{
+    height: 400px;
+    width:20%;
+    margin: 2%;
+    float: left;
+    overflow: scroll;
+    background-color: grey;
+
+}
+.brown{
+    background-color:aqua;
+}
+.olive{
+    background-color:olive;
+}
+.orange{
+    background-color: orange;
+}
+.card>img{
+    height: 200px;
+    width: 100%;
+}
