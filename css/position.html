@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position property</title>
+    <style>
+      .static{
+        width:100px;
+        height: 100px;
+        background-color: rgb(255, 0, 255);
+        border: 1px solid black;
+        position: static;
+        top: 20px;
+        left: 20px;
+        
+      } 
+      .relative{
+        width:500px;
+        height: 500px;
+        background-color: rgb(6, 91, 20);
+        border: 1px solid black;
+       
+        /* position: relative; */
+        top: 200px;
+        left: 200px;
+
+      } 
+      .absolute{
+        width:100px;
+        height: 100px;
+        background-color: rgb(255, 0, 255);
+        border: 1px solid black;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+      }
+      .parent{
+        width:700px;
+        height: 700px;
+        background-color: rgb(44, 6, 40);
+        border: 1px solid black;
+        /* position: relative; */
+        top: 10px;
+        left: 10px;
+        padding:50px;
+
+
+        
+      }
+      .angain{
+        width:700px;
+        height: 700px;
+        background-color: rgb(38, 0, 255);
+        border: 1px solid black;
+        position: relative;
+       
+        
+      }
+      .abs{
+        width:400px;
+        height: 400px;
+        background-color: rgb(122, 7, 26);
+        border: 1px solid black;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        
+
+
+      }
+      
+      .sticky{
+        width:50px;
+        height: 50px;
+        background-color: rgb(172, 136, 15);
+        border: 1px solid black;
+        position: sticky;
+        top: 30px;
+        left: 50px;
+      }
+      .fixed{
+        width:50px;
+        height: 50px;
+        background-color: rgb(54, 127, 81);
+        border: 1px solid black;
+        position: fixed;
+        top: 30px;
+        left: 50px;
+
+      }
+    </style>
+</head>
+<body>
+    <h1>CSS position property</h1>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+    </ul>
+    <div class="static">
+
+    </div>
+    <div class="sticky">
+
+    </div>
+    <div class="fixed">
+
+    </div>
+    
+    
+    <div class="parent">
+        <div class="relative">
+            <div class="absolute">
+    
+            </div>
+    
+        </div>
+        
+    </div>
+    <div class="angain">
+        <div class="abs">
+           
+
+        </div>
+        
+    </div>
+
+    
+    
+    
+    
+</body>
+</html>

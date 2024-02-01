@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object methods</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>FName</th>
+            <th>SName</th>
+            <th>FullName</th>
+        </tr>
+        <tr>
+            <td id="first"></td>
+            <td id="2nd"></td>
+            <td id="3rd"></td>
+    
+        </tr>
+    </table>
+    <script>
+        const person = {
+            firstName:"Soni",
+            lastName:"ray",
+            fullName:function(){
+                return `${person.firstName} and ${person.lastName}`
+            }
+        };
+        let x = person.firstName;
+        let y = person.lastName;
+        let z = person.fullName();
+        console.log(z);
+        document.getElementById('first').innerHTML=x;
+        document.getElementById('2nd').innerHTML=y;
+        document.getElementById('3rd').innerHTML=z;
+
+
+        
+    </script>
+    
+</body>
+</html>

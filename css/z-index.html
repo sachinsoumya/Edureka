@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        img{
+            position: absolute;
+            top:20px;
+            left:20px;
+            z-index:-1;
+        }
+        .abs{
+            position: absolute;
+            top:60px;
+            left:30px;
+           
+        }
+        .container{
+            position: relative;
+            background-color: blue;
+            height: 300px;
+            width: 200px;
+        }
+        .cs1{
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border: 1px solid black;
+            top:20px ;
+            left:20px;
+            background-color: aqua;
+            z-index: 0;
+        }
+        .cs2{
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border: 1px solid black;
+            top:30px ;
+            left:50px;
+            background-color:burlywood;
+            z-index: 2;
+        }
+
+        .cs3{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+            top:26px ;
+            left:30px;
+            background-color:coral;
+            z-index:5 ;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <img src="tree.png" alt="image">
+    <div class="abs">This is a image of a treebdc    hhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhh</div>
+    <div class="container">
+        <div class="cs1">Hello</div>
+        <div class="cs2">hii</div>
+        <div class="cs3">Namaste</div>
+    </div>
+
+    
+</body>
+</html>
