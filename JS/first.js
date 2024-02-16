@@ -40,7 +40,12 @@ function filterOut (...x){
 }
 
 
-export {findFib , filterOut};
+function alertOut (){
+    alert("Hello world!")
+}
+
+
+export {findFib , filterOut , alertOut};
 
 
 
