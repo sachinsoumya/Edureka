@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Objects</title>
-</head>
-<body>
-    <h1>display objects</h1>
-    <button  class="btn">click me</button>
-    <!-- <form action="#" id="myForm" onsubmit="return validateForm()">
-        <label for="fname">First Name:</label><br><br>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">last Name:</label><br><br>
-        <input type="text" id="lname" name="lname"><br><br>
-        <input type="submit" value="Submit">
-    </form> -->
-    <script src="tryCatch.js" type="module"></script>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #node {
+        background-color: pink;
+        color: "brown";
+
+        font-size: medium;
+      }
+      .btn {
+        font-size: 20px;
+        text-shadow: 2px 2px 5px black;
+      }
+
+      a:hover {
+
+        color:red;
+        font-size: 20px;
+
+
+
+
+      }
+
+      p::first-letter{
+        text-decoration: underline;
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: center; color: red" id="node">Hello Sachin</div>
+    <div style="text-align: center" id="node">Hello Sachin2</div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ex
+      tempora quis dolorum et repudiandae tenetur voluptate molestiae, vero quae
+      laudantium enim. Nihil amet asperiores ut laboriosam eos quidem quos.
+    </p>
+    <div class="inner">
+      <input type="radio" value="John" name="name" id="john" />
+      <input type="radio" value="Sam" name="name" id="Sam" />
+      <input type="radio" value="Sool" name="name" id="sool" />
+      <input type="radio" value="Rock" name="name" id="Rock" />
+      <input type="radio" value="Devid" name="name" id="Devid" />
+    </div>
+
+    <ul id="exam">
+      <li class="mark"><div>hii</div></li>
+      <li class="mark">hlwo</li>
+      <li class="mark">kokk</li>
+      <li class="mark mark2">ljjoi</li>
+      <li class="mark">ljjoi</li>
+    </ul>
+
+    <button
+      class="btn"
+      style="color: rgb(255, 0, 0); text-decoration: underline ;font-size: 5px;"
+    >
+      Click me
+    </button>
+
+    <div id="rest">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere velit
+        praesentium quo ab tempora placeat iste deleniti nihil id! Asperiores
+        illo neque quam corporis, voluptate ipsam esse exercitationem ipsa
+        veritatis.
+      </p>
+      <div style="display: none">Hello</div>
+    </div>
+
+    <div class="red">Kii</div>
+
+    <ul class="blue">
+      <li>Reds</li>
+    </ul>
+
+    <ul class="movie">
+      <li>KGF</li>
+    </ul>
+
+    <a href="www.google.com" >Click me</a>
+
+    <script src="document.js"></script>
+  </body>
 </html>
