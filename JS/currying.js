@@ -18,6 +18,8 @@ function add1(num1) {
   };
 }
 
+debugger
+
 console.log(add1(10)(20)(30));
 
 
