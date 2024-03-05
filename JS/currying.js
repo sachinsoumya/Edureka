@@ -18,7 +18,7 @@ function add1(num1) {
   };
 }
 
-debugger
+// debugger
 
 console.log(add1(10)(20)(30));
 
@@ -78,3 +78,9 @@ const love = (a)=>(b)=>(c)=> a()+b()+c();
 //TODO - here lovelife is curried function 
 loveLife = love(()=> "Sachin")(()=>" Tendulkar")(()=>" is a great cricketer");
 console.log(loveLife);
+
+
+const ff = function (){
+
+  console.log("love")
+}();
