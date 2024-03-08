@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice</title>
+
+    <style>
+        #grandParent {
+            border:1px solid green;
+            width:335px;
+            height:400px;
+            padding: 10px;
+
+        }
+
+        #parent{
+
+            border:1px solid pink;
+            width:250px;
+            height:200px;
+            padding:10px
+        }
+
+        #child{
+
+            border:1px solid black;
+            width:150px;
+            height:100px;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <input type="text" name="name" />
+    
+    
+    <button type="button" >Click me</button>
+    <button type="button" class="btn1" onclick="callMe(event.target)">Open it</button>
+    <button type="button" class="btn2">Open Modal</button>
+
+
+    <div id="grandParent">
+        grand parent
+        <div id="parent">
+            parent
+            <div id="child">
+                children
+
+            </div>
+        </div>
+    </div>
+
+    <a href="https://google.com" >Go to google</a>
+
+    <script src="Event.js"></script>
+</body>
+</html>
