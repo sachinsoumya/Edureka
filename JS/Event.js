@@ -77,6 +77,72 @@ x1.onclick = function(e){
 }
 
 
+//* load event handlers 
+
+// window.addEventListener('load' , function(){
+//     console.log('page is fully loaded');
+// });
+
+// window.onload = function(){
+//     console.log('page is loaded completely')
+// }
+
+const img = document.querySelector('img');
+img.addEventListener('load' , ()=>{
+    console.log('image is fully loaded');
+    
+
+});
+
+img.src= 'https://i0.wp.com/www.eastmojo.com/wp-content/uploads/2024/03/Mahashivratri-2024.webp?fit=1200%2C686&ssl=1';
+
+window.addEventListener('load' , (event)=>{
+    console.log('page is loaded fully');
+
+    let img = document.createElement('img');
+
+    img.addEventListener('load' , ()=>{
+        alert('This image is loaded')
+    });
+
+    img.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcn1Rxq0Op4vVprFEBXueAex747Abfq0uFS-xk5NNOE4Av2zRJK2yGAEtHjGuO84lZ5ak&usqp=CAU';
+    document.body.appendChild(img);
+
+
+})
+
+// function checkJs (){
+//     let script = document.createElement('script');
+
+//     script.addEventListener('load' , ()=>{
+//         console.log('script is loaded');
+//     });
+
+//     script.src = 'app.js';
+//     document.body.appendChild(script);
+
+
+
+// }
+
+// window.addEventListener('load' , checkJs);
+
+
+window.addEventListener('beforeunload' , (e)=>{
+    e.preventDefault();
+    e.returnValue = '';
+    
+   
+
+});
+
+
+
+
+
+
+
+
 
 
 

@@ -1,61 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pratice</title>
 
     <style>
-        #grandParent {
-            border:1px solid green;
-            width:335px;
-            height:400px;
-            padding: 10px;
+      #grandParent {
+        border: 1px solid green;
+        width: 335px;
+        height: 400px;
+        padding: 10px;
+      }
 
-        }
+      #parent {
+        border: 1px solid pink;
+        width: 250px;
+        height: 200px;
+        padding: 10px;
+      }
 
-        #parent{
+      #child {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+        padding: 10px;
+      }
+      .s5 {
+        border: 1px solid pink;
+        min-width: 150px;
+        min-height: 100px;
+        padding: 10px 15px;
+        margin: 20px;
+      }
+      .s15 {
+        border: 1px solid blue;
+        min-width: 100px;
+        min-height: 50px;
+        padding: 10px 15px;
+      }
+      .box {
+        background-color: aquamarine;
+        width: 100%;
+        border: 1px solid olive;
+        height: 500px;
+      }
 
-            border:1px solid pink;
-            width:250px;
-            height:200px;
-            padding:10px
-        }
+      .scrlColor {
+        background-color: brown;
+      }
 
-        #child{
+      .pencile {
+        display: flex;
+      }
 
-            border:1px solid black;
-            width:150px;
-            height:100px;
-            padding: 10px;
-        }
+      .box{
+         overflow: scroll;
+      }
 
+      .box ul li {
+        padding: 10px;
+        font-size: 35px;
+        width: 100%;
 
+        background-color: cadetblue;
+
+        margin: auto;
+
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body onload="console.log(event.type +'here is working')">
     <input type="text" name="name" />
-    
-    
-    <button type="button" >Click me</button>
-    <button type="button" class="btn1" onclick="callMe(event.target)">Open it</button>
+
+    <button type="button">Click me</button>
+    <button type="button" class="btn1" onclick="callMe(event.target)">
+      Open it
+    </button>
     <button type="button" class="btn2">Open Modal</button>
 
-
     <div id="grandParent">
-        grand parent
-        <div id="parent">
-            parent
-            <div id="child">
-                children
-
-            </div>
-        </div>
+      grand parent
+      <div id="parent">
+        parent
+        <div id="child">children</div>
+      </div>
     </div>
 
-    <a href="https://google.com" >Go to google</a>
+    <div class="s5">
+      <div class="s15"></div>
+    </div>
 
-    <script src="Event.js"></script>
-</body>
+    <a href="https://google.com">Go to google</a>
+    <img id="img" onload="console.log(event.target + 'is loaded fully')" />
+
+    <button class="iball">Press the button</button>
+    <input type="button" value="press for modifiers" id="btn1" />
+    <div id="text"></div>
+
+    <div class="box">
+        <div class="intoViewTop">Scroll into View - Top</div>
+      <ul id="paper">
+        <li>HTML</li>
+        <li class="view2">CSS</li>
+        <li>JS</li>
+        <li>React</li>
+        <li>Node</li>
+        <li>Tailwind</li>
+        <li>MongoDb</li>
+        <li>Express</li>
+        <li class="view">Bootstrap</li>
+        <li>Java</li>
+      </ul>
+      <div class="intoViewButton">Scroll into View - Button</div>
+    </div>
+
+    <div class="pencile">
+      <button class="scrlLeft">ScrollRight</button>
+
+      <button class="scrlRight">ScrollTop</button>
+    </div>
+    <input type="text" name="name" id="text1"/>
+
+    
+
+    
+
+    <script src="Event3.js"></script>
+  </body>
 </html>
